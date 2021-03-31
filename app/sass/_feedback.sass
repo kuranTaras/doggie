@@ -1,0 +1,155 @@
+.feedback
+  background-image: url("../img/feedback/01.png")
+  background-position: 50%
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 0 30px
+  @media (max-width: 480px)
+    padding: 0 20px
+  .container
+    transform: translateY(300px)
+    transition-duration: 0.5s
+    padding: 130px 0 210px 0
+    position: relative
+    @media (max-width: 768px)
+      flex-direction: column
+      align-items: center
+    .feedback__left
+      display: flex
+      position: relative
+      z-index: 2
+      flex-direction: column
+      padding: 76px 58px 76px 58px
+      background: #5D62B5
+      border-radius: 40px
+      max-width: 585px
+      width: 100%
+      filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2))
+      margin-right: 30px
+      @media (max-width: 1024px)
+        padding: 38px 29px 38px 29px
+      @media (max-width: 768px)
+        margin-right: 0
+      @media (max-width: 480px)
+        padding: 19px 14px 19px 14px
+      h2
+        font-family: Roboto, sans-serif
+        font-style: normal
+        text-align: center
+        margin-bottom: 48px
+        font-weight: 900
+        font-size: 36px
+        line-height: 116.6%
+        color: #FFFFFF
+      .form
+        display: flex
+        flex-wrap: wrap
+        margin-left: -22.4px
+        input, textarea
+          margin-left: 22.4px
+          margin-bottom: 22px
+          background: none
+          border-radius: 10px
+          border: 2px solid #FFFFFF
+          outline: none
+          font-family: Roboto, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 150%
+          display: flex
+          align-items: center
+          letter-spacing: 0.15px
+          color: #FFFFFF
+        input
+          width: calc(50% - 22.4px)
+          padding: 17px 23.6px 15px 23.6px
+          transition-duration: 0.3s
+          @media (max-width: 480px)
+            width: calc(100% - 22.4px)
+        textarea
+          width: 100%
+          padding: 17px 23px
+          resize: none
+          height: 180px
+          transition-duration: 0.3s
+        .feedback_error
+          border-color: red
+      button
+        cursor: pointer
+        outline: none
+        background: #F2726F
+        padding: 12px 0
+        border-radius: 8px
+        width: 100%
+        max-width: 210px
+        justify-content: center
+        margin-left: auto
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 200%
+        display: flex
+        align-items: center
+        text-align: center
+        letter-spacing: 0.15px
+        text-transform: uppercase
+        color: #FFFFFF
+        @media (max-width: 480px)
+          margin: 0 auto
+    .feedback__right
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 166px
+      margin-left: auto
+      max-width: 324px
+      position: relative
+      z-index: 2
+      @media (max-width: 768px)
+        margin-left: 0
+        margin-top: 50px
+      p
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: 900
+        font-size: 30px
+        line-height: 120%
+        text-align: center
+        color: #FFFFFF
+      h1
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: 900
+        font-size: 96px
+        line-height: 58.3%
+        display: flex
+        align-items: center
+        text-align: center
+        color: #FFFFFF
+        margin-top: 46px
+      span
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: 900
+        font-size: 19px
+        line-height: 136.8%
+        text-align: center
+        color: #FFFFFF
+        margin-top: 46px
+    .feedback__absolute
+      img
+        &:first-child
+          bottom: 5.7%
+          left: -20.2%
+          width: 87.6%
+          z-index: 1
+          @media (max-width: 768px)
+            bottom: 40%
+        &:nth-child(2)
+          left: -10.7%
+          bottom: 17.5%
+          @media (max-width: 768px)
+            bottom: 38%
+        position: absolute

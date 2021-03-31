@@ -1,0 +1,108 @@
+.services
+  background-color: #F5F5F5
+  position: relative
+  overflow: hidden
+  padding: 110px 20px 122px 20px
+  .container
+    flex-direction: column
+    position: relative
+    z-index: 2
+    .services__subtitle
+      display: flex
+      align-items: center
+      margin-bottom: 33px
+      h4
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 200%
+        margin-left: 16px
+        display: flex
+        align-items: center
+        letter-spacing: 2.5px
+        text-transform: uppercase
+        color: #5D62B5
+    h1
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 36px
+      line-height: 116.6%
+      color: #000000
+      margin-bottom: 78px
+      @media (max-width: 480px)
+        text-align: center
+    .services__all
+      display: flex
+      flex-wrap: wrap
+      margin-left: -24px
+      transform: translateY(200px)
+      transition-duration: 0.5s
+      .services__service
+        &:hover
+          filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2))
+        width: calc(33.333% - 24px)
+        cursor: pointer
+        transition-duration: 0.4s
+        margin-left: 24px
+        background-color: #FFFFFF
+        border-radius: 20px
+        padding: 50px 44px
+        align-items: center
+        display: flex
+        flex-direction: column
+        margin-bottom: 24px
+        @media (max-width: 1024px)
+          padding: 25px 22px
+        @media (max-width: 768px)
+          width: calc(50% - 24px)
+        @media (max-width: 480px)
+          width: calc(100% - 24px)
+        img
+          margin-bottom: 33px
+        h3
+          font-family: Roboto, sans-serif
+          font-style: normal
+          font-weight: 900
+          font-size: 19px
+          line-height: 136.8%
+          text-align: center
+          color: #F2726F
+          margin-bottom: 20px
+        p
+          font-family: Roboto, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 150%
+          text-align: center
+          letter-spacing: 0.15px
+          color: #4B4B4B
+    a
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 200%
+      display: flex
+      align-items: center
+      text-align: center
+      letter-spacing: 0.15px
+      text-transform: uppercase
+      color: #FFFFFF
+      max-width: 124px
+      width: 100%
+      margin: 42px auto 0 auto
+      background-color: #F2726F
+      padding: 13px 0
+      justify-content: center
+      border-radius: 8px
+  .services__absolute
+    img
+      width: 623px
+      position: absolute
+      top: -581px
+      right: 0
+      z-index: 1
+
